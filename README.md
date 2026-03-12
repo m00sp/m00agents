@@ -3,7 +3,7 @@
 This repository contains various custom agents.md files.
 
 # 🤖 Awesome GitHub Copilot
-[![Powered by Awesome Copilot](https://img.shields.io/badge/Powered_by-Awesome_Copilot-blue?logo=githubcopilot)](https://aka.ms/awesome-github-copilot) [![GitHub contributors from allcontributors.org](https://img.shields.io/github/all-contributors/github/awesome-copilot?color=ee8449)](#contributors-)
+[![Powered by Awesome Copilot](https://img.shields.io/badge/Powered_by-Awesome_Copilot-blue?logo=githubcopilot)](https://aka.ms/awesome-github-copilot)
 
 
 A community created collection of custom agents and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
