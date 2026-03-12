@@ -12,7 +12,7 @@ A community created collection of custom agents and instructions to supercharge 
 
 This repository provides a comprehensive toolkit for enhancing GitHub Copilot with specialized:
 
-- **👉 [Awesome Agents](docs/README.agents.md)** - Specialized GitHub Copilot agents that integrate with MCP servers to provide enhanced capabilities for specific workflows and tools
+- **👉 [Awesome Agents](docs/README.m00agents.md)** - Specialized GitHub Copilot agents that integrate with MCP servers to provide enhanced capabilities for specific workflows and tools
 - **👉 [Awesome Instructions](docs/README.instructions.md)** - Comprehensive coding standards and best practices that apply to specific file patterns or entire projects
 - **👉 [Awesome Hooks](docs/README.hooks.md)** - Automated workflows triggered by specific events during development, testing, and deployment
 - **👉 [Awesome Agentic Workflows](docs/README.workflows.md)** - AI-powered repository automations that run coding agents in GitHub Actions with natural language instructions
