@@ -1,31 +1,52 @@
 # m👀agents
+
+[![Powered by m👀agents](https://img.shields.io/badge/Powered_by-Awesome_Copilot-blue?logo=githubcopilot)](https://github.com/m00sp/m00agents)
+
 ✅
-This repository contains various custom agents.md files.
+This repository contains a collection of custom agents and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
 
-# 🤖 Awesome GitHub Copilot
-[![Powered by Awesome Copilot](https://img.shields.io/badge/Powered_by-Awesome_Copilot-blue?logo=githubcopilot)](https://aka.ms/awesome-github-copilot)
-
-
-A community created collection of custom agents and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
-
-## 🚀 What is Awesome GitHub Copilot?
+## 🚀 What is Custom m👀Agents Copilot?
 
 This repository provides a comprehensive toolkit for enhancing GitHub Copilot with specialized:
 
 - **👉 [Awesome Agents](docs/README.m00agents.md)** - Specialized GitHub Copilot agents that integrate with MCP servers to provide enhanced capabilities for specific workflows and tools
-- **👉 [Awesome Instructions](docs/README.instructions.md)** - Comprehensive coding standards and best practices that apply to specific file patterns or entire projects
-- **👉 [Awesome Hooks](docs/README.hooks.md)** - Automated workflows triggered by specific events during development, testing, and deployment
-- **👉 [Awesome Agentic Workflows](docs/README.workflows.md)** - AI-powered repository automations that run coding agents in GitHub Actions with natural language instructions
-- **👉 [Awesome Skills](docs/README.skills.md)** - Self-contained folders with instructions and bundled resources that enhance AI capabilities for specialized tasks
-- **👉 [Awesome Plugins](docs/README.plugins.md)** - Curated plugins of related agents and skills organized around specific themes and workflows
-- **👉 [Awesome Cookbook Recipes](cookbook/README.md)** - Practical, copy-paste-ready code snippets and real-world examples for working with GitHub Copilot tools and features
 
-## 🌟 Featured Plugins
 
 ### 🤖 Custom m👀Agents
 
 Custom agents can be used in Copilot coding agent (CCA), VS Code, and Copilot CLI (coming soon). For CCA, when assigning an issue to Copilot, select the custom agent from the provided list. In VS Code, you can activate the custom agent in the agents session, alongside built-in agents like Plan and Agent.
 
+You can define custom agents at the user, repository, or organization/enterprise level:
+
+| Type | Locations | Scope |
+| ---- | --------- | ----- |
+| User-level custom agent | local <mark>~/.copilot/agents</mark> directory | All projects |i
+| Repository-level custom agent | <mark>.github/agents</mark> directory in your local and remote reporitories | Current project |
+  Organization and Enterprise-level custom agent | <mark>/agents</mark> directory in the <mark>.github-private repository in an organization or enterprise | All projects under your organization and enterprise account
+
+ In the case of naming conflicts, a system-level agent overrides a repository-level agent, and the repository-level agent would override an organization-level agent.
+
+Custom agents can be used in three ways:
+
+- Using the slash command in the CLI's interactive interface to select from the list of available custom agents:
+
+```
+/agent
+```
+
+- Calling out to the custom agent directly in a prompt:
+
+```
+Use the refactoring agent to refactor this code block
+```
+
+Copilot will automatically infer the agent you want to use.
+
+- Specifying the custom agent you want to use with the command-line option. For example:
+
+```
+copilot --agent=refactor-agent --prompt "Refactor this code blockk"
+```
 
 ## 🎯 Why Use Awesome GitHub Copilot?
 
