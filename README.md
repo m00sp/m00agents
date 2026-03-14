@@ -75,7 +75,7 @@ Each agent is tailored to help you quickly produce professional results with min
 
 - **[Quick Start Tutorial](docs/quick-start-tutorial.md)** - Step-by-step guide to understanding and using Copilot agents
 - **[Detailed Agent Guide](docs/README.m00agents.md)** - In-depth documentation about custom agents and how to create your own
-- **[Agent Template](agents/starter-template.agent.md)** - Reference template for building your own custom agents
+- **[Agent Template](agents/starter-template.md)** - Reference template for building your own custom agents
 
 ## 🎓 About Custom Agents
 

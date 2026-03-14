@@ -20,7 +20,7 @@ This repository contains a collection of custom GitHub Copilot agents and instru
 │   ├── lint-formater.agent.md # Runs linting and code formatting
 │   ├── dev-deployer.agent.md  # Manages development deployments
 │   ├── readme-creator.agent.md # Generates and updates README files
-│   └── starter-template.agent.md # Template showing agent format
+│   └── starter-template.md # Template showing agent format
 ├── docs/               # Documentation and guides
 │   └── README.m00agents.md # Detailed guide for using custom agents
 └── README.md           # Project overview
@@ -31,7 +31,7 @@ This repository contains a collection of custom GitHub Copilot agents and instru
 **Agent Format:**
 - Agents are Markdown files with frontmatter (name, description) followed by YAML-style or text instructions
 - Each agent defines: a persona, project knowledge, available tools, standards/conventions, and boundaries
-- The `starter-template.agent.md` shows the canonical format
+- The `starter-template.md` shows the canonical format
 
 **Agent Boundaries:**
 - ✅ Agents typically can: modify code in defined directories (like `src/`), write tests, run specified commands
@@ -74,7 +74,7 @@ This is primarily a documentation and configuration repository. Common operation
 
 - **View agents**: Open any `.md` file in the `agents/` directory
 - **Edit agents**: Modify agent definitions directly—test by loading them in VS Code or Copilot CLI
-- **Create new agents**: Use `agents/starter-template.agent.md` as a reference template
+- **Create new agents**: Use `agents/starter-template.md` as a reference template
 - **Check documentation**: Review `README.md` and `docs/README.m00agents.md` for integration guidelines
 
 ## Important Conventions
@@ -115,7 +115,7 @@ Agents benefit from MCP servers for enhanced capabilities. **Recommended MCP ser
 ## Key Files to Know
 
 - **README.md**: Project overview, why to use custom agents, licensing
-- **agents/starter-template.agent.md**: Canonical format for all new agents—always reference this
+- **agents/starter-template.md**: Canonical format for all new agents—always reference this
 - **docs/README.m00agents.md**: Installation and activation guide for end users
 - **.github/copilot-instructions.md**: This file; guidance for future Copilot sessions
 
