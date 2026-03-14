@@ -74,7 +74,7 @@ This is primarily a documentation and configuration repository. Common operation
 
 - **View agents**: Open any `.md` file in the `agents/` directory
 - **Edit agents**: Modify agent definitions directly—test by loading them in VS Code or Copilot CLI
-- **Create new agents**: Use `agents/starter-template.agent.md` as a reference template
+- **Create new agents**: Use `agents/starter-template.md` as a reference template
 - **Check documentation**: Review `README.md` and `docs/README.m00agents.md` for integration guidelines
 
 ## Important Conventions
@@ -115,7 +115,7 @@ Agents benefit from MCP servers for enhanced capabilities. **Recommended MCP ser
 ## Key Files to Know
 
 - **README.md**: Project overview, why to use custom agents, licensing
-- **agents/starter-template.agent.md**: Canonical format for all new agents—always reference this
+- **agents/starter-template.md**: Canonical format for all new agents—always reference this
 - **docs/README.m00agents.md**: Installation and activation guide for end users
 - **.github/copilot-instructions.md**: This file; guidance for future Copilot sessions
 
