@@ -1,96 +1,120 @@
 # m👀agents
 
-[![Powered by m👀agents](https://img.shields.io/badge/Powered_by-Awesome_Copilot-blue?logo=githubcopilot)](https://github.com/m00sp/m00agents)
+<div align="center">
 
-✅
-This repository contains a collection of custom agents and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
+[![Made with ❤️ by Copilot](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F%20by-Copilot-ff69b4?style=flat-square)](https://github.com/github/copilot-docs)
+![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-brightgreen?style=flat-square)
 
-## 🚀 What is Custom m👀Agents Copilot?
+**A collection of beginner-friendly custom GitHub Copilot agents to get you started with AI-assisted development.**
 
-This repository provides a comprehensive toolkit for enhancing GitHub Copilot with specialized:
+</div>
 
-- **👉 [Awesome Agents](docs/README.m00agents.md)** - Specialized GitHub Copilot agents that integrate with MCP servers to provide enhanced capabilities for specific workflows and tools
+## 🎯 What is m👀agents?
 
+m👀agents is a starter toolkit of custom agents designed for developers new to GitHub Copilot. It provides ready-to-use agents that enhance Copilot's capabilities for common tasks like creating documentation and code templates.
 
-### 🤖 Custom m👀Agents
+Whether you're exploring custom agents for the first time or building on existing skills, this collection demonstrates how to create and use specialized AI personas in your workflow.
 
-Custom agents can be used in Copilot coding agent (CCA), VS Code, and Copilot CLI (coming soon). For CCA, when assigning an issue to Copilot, select the custom agent from the provided list. In VS Code, you can activate the custom agent in the agents session, alongside built-in agents like Plan and Agent.
+## 🚀 Quick Start
 
-You can define custom agents at the user, repository, or organization/enterprise level:
+### Get the Agents
 
-| Type | Locations | Scope |
-| ---- | --------- | ----- |
-| User-level custom agent | local <mark>~/.copilot/agents</mark> directory | All projects |i
-| Repository-level custom agent | <mark>.github/agents</mark> directory in your local and remote reporitories | Current project |
-  Organization and Enterprise-level custom agent | <mark>/agents</mark> directory in the <mark>.github-private repository in an organization or enterprise | All projects under your organization and enterprise account
-
- In the case of naming conflicts, a system-level agent overrides a repository-level agent, and the repository-level agent would override an organization-level agent.
-
-Custom agents can be used in three ways:
-
-- Using the slash command in the CLI's interactive interface to select from the list of available custom agents:
-
-```
-/agent
+**Option 1: Clone for local experimentation**
+```bash
+git clone https://github.com/m00sp/m00agents.git
+cd m00agents
 ```
 
-- Calling out to the custom agent directly in a prompt:
-
-```
-Use the refactoring agent to refactor this code block
-```
-
-Copilot will automatically infer the agent you want to use.
-
-- Specifying the custom agent you want to use with the command-line option. For example:
-
-```
-copilot --agent=refactor-agent --prompt "Refactor this code blockk"
+**Option 2: Fork to your GitHub account**
+```bash
+# Visit: https://github.com/m00sp/m00agents/fork
+# Then clone your fork
+git clone https://github.com/YOUR-USERNAME/m00agents.git
+cd m00agents
 ```
 
-## 🎯 Why Use Awesome GitHub Copilot?
+### Install Agents Locally
 
-- **Productivity**: Pre-built agents and instructions save time and provide consistent results.
-- **Best Practices**: Benefit from community-curated coding standards and patterns.
-- **Specialized Assistance**: Access expert-level guidance through specialized custom agents.
-- **Continuous Learning**: Stay updated with the latest patterns and practices across technologies.
+Copy agents to your local Copilot configuration:
+
+```bash
+# Copy to user-level agents (available in all projects)
+cp agents/*.agent.md ~/.copilot/agents/
+```
+
+Or for repository-specific use:
+```bash
+# Copy to repository-level agents (available only in this project)
+mkdir -p .github/agents
+cp agents/*.agent.md .github/agents/
+```
+
+### Use an Agent in Copilot CLI
+
+```bash
+# List available agents
+copilot /agent
+
+# Or specify an agent directly
+copilot --agent=docs-creator --prompt "Create documentation for..."
+copilot --agent=readme-creator --prompt "Generate a README..."
+```
+
+## 📦 Available Agents
+
+This repository includes the following agents:
+
+| Agent | Purpose |
+|-------|---------|
+| **readme-creator** | Creates comprehensive and well-structured README files |
+| **docs-creator** | Generates clear, user-friendly documentation |
+
+Each agent is tailored to help you quickly produce professional results with minimal setup.
+
+## 📚 Learn More
+
+- **[Quick Start Tutorial](docs/quick-start-tutorial.md)** - Step-by-step guide to understanding and using Copilot agents
+- **[Detailed Agent Guide](docs/README.m00agents.md)** - In-depth documentation about custom agents and how to create your own
+- **[Agent Template](agents/starter-template.agent.md)** - Reference template for building your own custom agents
+
+## 🎓 About Custom Agents
+
+Custom agents are specialized AI personas you can create to enhance Copilot for specific workflows. You can:
+
+- Define them at the **user level** (all your projects)
+- Define them at the **repository level** (one specific project)
+- Define them at the **organization level** (for teams)
+
+Learn more in the [official GitHub Copilot documentation](https://docs.github.com/en/copilot/customizing-copilot).
 
 ## 📖 Repository Structure
 
 ```plaintext
-├── instructions/     # Coding standards and best practices (.instructions.md)
-├── agents/           # AI personas and specialized modes (.agent.md)
-├── hooks/            # Automated hooks for Copilot coding agent sessions
-├── workflows/        # Agentic Workflows for GitHub Actions automation
-├── plugins/          # Installable plugins bundling related items
-├── scripts/          # Utility scripts for maintenance
-└── skills/           # AI capabilities for specialized tasks
+m00agents/
+├── agents/              # Custom Copilot agents (.agent.md files)
+├── docs/                # Guides and tutorials
+├── assets/              # Icons and visual assets
+├── instuctions/         # Project guidelines
+└── README.md            # This file
 ```
 
-## 📄 License
+## 🔗 Credits & Inspiration
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project was inspired by:
 
-## 🛡️ Security & Support
-
-- **Security Issues**: Please see our [Security Policy](SECURITY.md)
-- **Support**: Check our [Support Guide](SUPPORT.md) for getting help
-- **Code of Conduct**: We follow the [Contributor Covenant](CODE_OF_CONDUCT.md)
+- 📖 [How to write a great agents.md](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/) by Matt Nigh - Essential reading for agent creators
+- ⭐ [Awesome GitHub Copilot](https://github.com/github/awesome-copilot) - Community collection of Copilot resources
 
 ## ℹ️ Disclaimer
 
-The customizations in this repository are sourced from and created by third-party developers. GitHub does not verify, endorse, or guarantee the functionality or security of these agents. Please carefully inspect any agent and its documentation before installing to understand permissions it may require and actions it may perform.
+The agents in this repository are examples created for learning and experimentation. GitHub does not verify, endorse, or guarantee their functionality or security. Always inspect agents and their documentation before use.
 
-## 📚 Sources:
+---
 
-- [About Custom Agents](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/agents/coding-agent/about-custom-agents) - Official GitHub Docs
-- [How to write a great agents.md: Lessons from over 2,500 repositories](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/) - GitHub Blog
-- [Awesome GitHub Copilot Repo](https://github.com/github/awesome-copilot - Awesome GitHub Copilot Repo
-- [Awesome GitHub Copilot Website](https://awesome-copilot.github.com/) - Awesome GitHub Copilot Website
-- https://agents.md/
+<div align="center">
 
-## 📚 Additional Resources
+**Made with ❤️ by Copilot**
 
-- [VS Code Copilot Customization Documentation](https://code.visualstudio.com/docs/copilot/copilot-customization) - Official Microsoft documentation
-- [GitHub Copilot Chat Documentation](https://code.visualstudio.com/docs/copilot/chat/copilot-chat) - Complete chat feature guide
-- [VS Code Settings](https://code.visualstudio.com/docs/getstarted/settings) - General VS Code configuration guide
+![Copilot Icon](assets/icons8-github-copilot-48.png)
+
+</div>
