@@ -1,5 +1,5 @@
 ---
-name: readme-creator
+name: m👀readme-creator
 description: Creates and improves README files with clear structure, installation guides, and project overview
 ---
 

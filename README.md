@@ -113,7 +113,7 @@ The agents in this repository are examples created for learning and experimentat
 
 <div align="center">
 
-**Made with ❤️ by Copilot**
+**Made with ❤️ and	Copilot**
 
 ![Copilot Icon](assets/icons8-github-copilot-48.png)
 
