@@ -325,7 +325,7 @@ copilot --agent=readme-creator "Write a README section that helps new team membe
 - Read `.github/copilot-instructions.md` for the full repository context
 - Check other `.agent.md` files to understand the format
 - Explore the GitHub Copilot CLI documentation: `copilot --help`
-- Create your own custom agent using `agents/starter-template.agent.md`
+- Create your own custom agent using `agents/starter-template.md`
 
 ---
 
@@ -381,7 +381,7 @@ copilot --agent=readme-creator "Add code examples for each feature"
 
 - **Agent Definition**: `agents/readme-creator.agent.md`
 - **Repository Instructions**: `.github/copilot-instructions.md`
-- **Starter Template**: `agents/starter-template.agent.md` (reference for all agents)
+- **Starter Template**: `agents/starter-template.md` (reference for all agents)
 - **Main Documentation**: `docs/README.m00agents.md`
 
 ---

@@ -20,7 +20,7 @@ This repository contains a collection of custom GitHub Copilot agents and instru
 │   ├── lint-formater.agent.md # Runs linting and code formatting
 │   ├── dev-deployer.agent.md  # Manages development deployments
 │   ├── readme-creator.agent.md # Generates and updates README files
-│   └── starter-template.agent.md # Template showing agent format
+│   └── starter-template.md # Template showing agent format
 ├── docs/               # Documentation and guides
 │   └── README.m00agents.md # Detailed guide for using custom agents
 └── README.md           # Project overview
@@ -31,7 +31,7 @@ This repository contains a collection of custom GitHub Copilot agents and instru
 **Agent Format:**
 - Agents are Markdown files with frontmatter (name, description) followed by YAML-style or text instructions
 - Each agent defines: a persona, project knowledge, available tools, standards/conventions, and boundaries
-- The `starter-template.agent.md` shows the canonical format
+- The `starter-template.md` shows the canonical format
 
 **Agent Boundaries:**
 - ✅ Agents typically can: modify code in defined directories (like `src/`), write tests, run specified commands
