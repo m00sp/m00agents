@@ -1,3 +1,5 @@
+[![en](https://img.shields.io/badge/English-380000?style=for-the-badge&logoColor=white&logo=DocuSign)](https://github.com/m00sp/m00agents/blob/main/README.md) [![es](https://img.shields.io/badge/Español-380000?style=for-the-badge&logoColor=white&logo=DocuSign)](https://github.com/m00sp/m00agents/blob/main/README.es.md) [![br](https://img.shields.io/badge/Português-EB5406?style=for-the-badge&logoColor=white&logo=DocuSign)](https://github.com/m00sp/m00agents/blob/main/README.pt-BR.md)
+
 # m👀agents
 
 <div align="center">
