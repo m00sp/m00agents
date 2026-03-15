@@ -62,12 +62,42 @@ copilot --agent=readme-creator --prompt "Generate a README..."
 
 ## 📦 Available Agents
 
-This repository includes the following agents:
+This repository includes specialized agents organized by domain:
 
+### 📝 Documentation Agents
 | Agent | Purpose |
 |-------|---------|
-| **readme-creator** | Creates comprehensive and well-structured README files |
-| **docs-creator** | Generates clear, user-friendly documentation |
+| **m👀readme-creator** | Creates and improves README files with clear structure, installation guides, and project overview |
+| **docs-creator** | Generates clear, user-friendly technical documentation |
+
+### 💻 Software Engineering Agents
+| Agent | Purpose |
+|-------|---------|
+| **C++ Expert** | Provide expert C++ software engineering guidance using modern C++ and industry best practices |
+| **m👀Rust Expert for Beginners** | Expert Rust guidance for beginners, emphasizing ownership, safety, and idiomatic patterns |
+| **Custom Agent Foundry** | Expert at designing, creating and improving custom agents with optimal configurations |
+
+### 🐧 Linux System Administration Agents
+| Agent | Purpose |
+|-------|---------|
+| **Arch Linux Expert** | Arch Linux specialist focused on pacman, rolling-release maintenance, and system administration |
+| **m👀Alpine Linux Expert** | Alpine Linux specialist focused on apk, lightweight systems, and minimal system administration |
+| **m👀Artix Linux Expert** | Artix Linux specialist focused on pacman, rolling-release maintenance, and OpenRC workflows |
+| **CentOS Linux Expert** | CentOS (Stream/Legacy) specialist focused on RHEL-compatible administration and yum/dnf workflows |
+| **Debian Linux Expert** | Debian specialist focused on stable system administration, apt-based package management |
+| **Fedora Linux Expert** | Fedora (Red Hat family) specialist focused on dnf, SELinux, and systemd-based workflows |
+| **m👀Gentoo Linux Expert** | Gentoo specialist focused on portage, source-based compilation, and USE flags |
+
+### ♿ Accessibility & Quality Agents
+| Agent | Purpose |
+|-------|---------|
+| **Accessibility Expert** | Expert assistant for web accessibility (WCAG 2.1/2.2), inclusive UX, and a11y testing |
+
+### 📋 Planning & Strategy Agents
+| Agent | Purpose |
+|-------|---------|
+| **Plan Mode - Strategic Planning & Architecture** | Strategic planning and architecture assistant focused on thoughtful analysis before implementation |
+| **Planning mode** | Generate an implementation plan for new features or refactoring existing code |
 
 Each agent is tailored to help you quickly produce professional results with minimal setup.
 
@@ -92,11 +122,14 @@ Learn more in the [official GitHub Copilot documentation](https://docs.github.co
 ```plaintext
 m00agents/
 ├── agents/              # Custom Copilot agents (.agent.md files)
+├── skills/              # Skills for enhanced Copilot capabilities (new!)
 ├── docs/                # Guides and tutorials
 ├── assets/              # Icons and visual assets
-├── instuctions/         # Project guidelines
+├── instructions/        # Project guidelines
 └── README.md            # This file
 ```
+
+**What's New:** The `skills/` directory contains additional skill modules to extend Copilot's capabilities beyond the base agents.
 
 ## 🔗 Credits & Inspiration
 
